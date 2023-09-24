@@ -14,22 +14,24 @@ const Header = () => {
   const [sayName, setSayName] = useState(false);
 
   return (
-    <div className=" flex flex-row w-[100vw] h-[95vh] text-white">
-      <div className=" w-[50%]">
-        <div className=" flex flex-col">
-          <TypewriterComponent
-            onInit={(typewriter: TypewriterClass) => {
-              typewriter
-                .typeString("Hi,")
-                .callFunction((state: TypewriterState) => {
-                  state.elements.cursor.remove();
-                  setSayName(true);
-                })
-                .start();
-            }}
-          />
+    <div className=" flex flex-col w-[100vw] justify-center md:align-middle md:h-[95vh] h-[81vh] text-white">
+      <div className=" flex md:flex-row  flex-col justify-evenly align-middle">
+        <div className=" flex flex-col md:w-[50%] h-[50vw] align-middle justify-center md:mx-[5%] mx-[5%]">
+          <span className=" md:text-[5vw] text-[10vw]">
+            <TypewriterComponent
+              onInit={(typewriter: TypewriterClass) => {
+                typewriter
+                  .typeString("Hi,")
+                  .callFunction((state: TypewriterState) => {
+                    state.elements.cursor.remove();
+                    setSayName(true);
+                  })
+                  .start();
+              }}
+            />
+          </span>
           {sayName ? (
-            <h1 className=" text-7xl">
+            <h1 className=" md:text-[8vw] text-[16vw]">
               <TypewriterComponent
                 onInit={(typewriter: TypewriterClass) => {
                   typewriter
@@ -45,18 +47,22 @@ const Header = () => {
           ) : (
             <></>
           )}
+          <p>&nbsp;</p>
+          {greeting ? (
+            <HeaderRolesTypewriter className=" md:text-[2vw] text-[5vw]" />
+          ) : (
+            <></>
+          )}
         </div>
-        <p>&nbsp;</p>
-        {greeting ? <HeaderRolesTypewriter /> : <></>}
-      </div>
-      <div className=" w-[50%]">
-        <Image
-          src={tech_stack}
-          className=" w-full"
-          width={100}
-          height={100}
-          alt="Alt-image"
-        />
+        <div className=" md:w-[50%] w-full md:p-0 p-[5%] pt-[10%] pb-0">
+          <Image
+            src={tech_stack}
+            className=" w-full"
+            width={100}
+            height={100}
+            alt="Alt-image"
+          />
+        </div>
       </div>
     </div>
   );

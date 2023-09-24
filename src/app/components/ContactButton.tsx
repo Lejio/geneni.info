@@ -6,7 +6,7 @@ export const ContactButton = extendVariants(Button, {
     // <- modify/add variants
     color: {
       "dark-purp":
-        "text-dark-purp border-dark-purp hover:!bg-dark-purp hover:text-white",
+        "text-dark-purp md:border-dark-purp border-transparent hover:!bg-dark-purp hover:text-white",
     },
   },
 });

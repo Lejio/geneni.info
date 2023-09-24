@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import TypewriterComponent from "typewriter-effect";
 
-export const HeaderRolesTypewriter = () => {
+export const HeaderRolesTypewriter = ({
+  className,
+}: {
+  className: string | undefined;
+}) => {
   const [followUp, setFollowUp] = useState(false);
   const roles = [
     "Software Developer",
@@ -12,7 +16,7 @@ export const HeaderRolesTypewriter = () => {
     "Typescript Enjoyer",
   ];
   return (
-    <div className="flex flex-row">
+    <div className={`flex flex-row ${className ? className : ""}`}>
       <TypewriterComponent
         onInit={(typewriter) => {
           typewriter

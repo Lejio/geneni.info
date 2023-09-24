@@ -7,7 +7,6 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  Button,
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
@@ -33,7 +32,7 @@ const NavbarComponent = () => {
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       classNames={{
-        wrapper: "max-w-full lg:mx-[10%]",
+        wrapper: "max-w-full lg:mx-[10%] text-white",
       }}
     >
       <NavbarContent className="sm:hidden" justify="start">
@@ -56,7 +55,7 @@ const NavbarComponent = () => {
           return (
             <NavbarItem key={`${item.title}-${index}`}>
               <Link
-                className="text-dark-purp hover:text-light-purp duration-300"
+                className="text-dark-purp hover:text-light-purp duration-300 xl:text-[1vw]"
                 href={item.href}
               >
                 {item.title}
@@ -68,17 +67,16 @@ const NavbarComponent = () => {
 
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button
+          <ContactButton
             as={Link}
             className="flex sm:hidden"
-            color="primary"
+            color="dark-purp"
             href="#contact"
-            variant="light"
-            size="lg"
+            variant="ghost"
             isIconOnly
           >
             <TbSend size={35} />
-          </Button>
+          </ContactButton>
           <ContactButton
             as={Link}
             className="hidden sm:flex"
@@ -98,7 +96,7 @@ const NavbarComponent = () => {
             className=" text-center py-[5%]"
           >
             <Link
-              className="w-full my-[5%] justify-center"
+              className="w-full my-[5%] justify-center text-white"
               href={item.href}
               onClick={() => console.log(setIsMenuOpen(false))}
             >
