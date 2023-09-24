@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import NavbarComponent from "./components/NavbarComponent";
+import { AboutSection } from "./components/AboutSection";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <div>
         <NavbarComponent />
         <Header />
+        <AboutSection />
       </div>
     </main>
   );

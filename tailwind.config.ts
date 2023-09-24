@@ -18,6 +18,8 @@ const config: Config = {
       colors: {
         "light-purp": "#5566BD",
         "dark-purp": "#434A73",
+        "maryland-red": "#C8062A",
+        "maryland-yellow": "#FFD61A",
       },
     },
   },
