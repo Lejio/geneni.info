@@ -15,6 +15,13 @@ import Link from "next/link";
 import Personal_Logo from "@/assets/Personal_Logo";
 import { NavItemType } from "@/types/NavItemType";
 import { ContactButton } from "./ContactButton";
+import { Inconsolata } from "next/font/google";
+
+const inconsolata = Inconsolata({
+  weight: "400",
+  subsets: ["latin"],
+  style: "normal",
+});
 
 const NavbarComponent = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -42,12 +49,14 @@ const NavbarComponent = () => {
       </NavbarContent>
       <NavbarContent className="sm:hidden" justify="center">
         <NavbarBrand>
-          <Personal_Logo />
+          {/* <Personal_Logo /> */}
+          <h2 className={`${inconsolata.className} text-4xl`}>N I</h2>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarBrand className="hidden sm:flex">
-        <Personal_Logo />
+        {/* <Personal_Logo /> */}
+        <h2 className={`${inconsolata.className} text-4xl`}>N I</h2>
       </NavbarBrand>
 
       <NavbarContent className="hidden sm:flex gap-20" justify="center">

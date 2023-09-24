@@ -7,7 +7,8 @@ const inter = Source_Code_Pro({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Gene Ni | Aspiring Software Engineer",
-  description: "Hello there! I'm Gene, a passionate and driven junior at the University of Maryland, pursuing a degree in Computer Science. I enjoy the world of programming and love learning the newest packages, frameworks and coding paradigms! I invite you to take a peek into my journey as a programmer!"
+  description:
+    "Hello there! I'm Gene, a passionate and driven junior at the University of Maryland, pursuing a degree in Computer Science. I enjoy the world of programming and love learning the newest packages, frameworks and coding paradigms! I invite you to take a peek into my journey as a programmer!",
 };
 
 export default function RootLayout({
