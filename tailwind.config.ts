@@ -17,6 +17,7 @@ const config: Config = {
       },
       colors: {
         "light-purp": "#5566BD",
+        "dark-purp": "#434A73",
       },
     },
   },

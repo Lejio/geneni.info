@@ -15,6 +15,7 @@ import {
 import Link from "next/link";
 import Personal_Logo from "@/assets/Personal_Logo";
 import { NavItemType } from "@/types/NavItemType";
+import { ContactButton } from "./ContactButton";
 
 const NavbarComponent = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -27,6 +28,7 @@ const NavbarComponent = () => {
 
   return (
     <Navbar
+      // shouldHideOnScroll
       isBordered
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
@@ -54,7 +56,7 @@ const NavbarComponent = () => {
           return (
             <NavbarItem key={`${item.title}-${index}`}>
               <Link
-                className=" hover:text-light-purp duration-300"
+                className="text-dark-purp hover:text-light-purp duration-300"
                 href={item.href}
               >
                 {item.title}
@@ -77,16 +79,16 @@ const NavbarComponent = () => {
           >
             <TbSend size={35} />
           </Button>
-          <Button
+          <ContactButton
             as={Link}
             className="hidden sm:flex"
-            color="primary"
+            color="dark-purp"
             href="#contact"
             variant="ghost"
           >
             <TbSend size={30} />
             Contact Me
-          </Button>
+          </ContactButton>
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu>
