@@ -12,7 +12,6 @@ import {
   NavbarMenuItem,
 } from "@nextui-org/react";
 import Link from "next/link";
-import Personal_Logo from "@/assets/Personal_Logo";
 import { NavItemType } from "@/types/NavItemType";
 import { ContactButton } from "./ContactButton";
 import { Inconsolata } from "next/font/google";
@@ -49,13 +48,11 @@ const NavbarComponent = () => {
       </NavbarContent>
       <NavbarContent className="sm:hidden" justify="center">
         <NavbarBrand>
-          {/* <Personal_Logo /> */}
           <h2 className={`${inconsolata.className} text-4xl`}>N I</h2>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarBrand className="hidden sm:flex">
-        {/* <Personal_Logo /> */}
         <h2 className={`${inconsolata.className} text-4xl`}>N I</h2>
       </NavbarBrand>
 
@@ -64,7 +61,7 @@ const NavbarComponent = () => {
           return (
             <NavbarItem key={`${item.title}-${index}`}>
               <Link
-                className="text-dark-purp hover:text-light-purp duration-300 xl:text-[1vw]"
+                className=" text-slate-200 hover:text-light-purp duration-300 xl:text-[1vw]"
                 href={item.href}
               >
                 {item.title}
