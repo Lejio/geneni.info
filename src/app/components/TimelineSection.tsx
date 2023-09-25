@@ -81,7 +81,7 @@ export const TimelineSection = () => {
         <div className=" w-screen h-screen flex flex-col items-center justify-center">
           <Image
             src={AIAA_LOGO_WHITE}
-            className=" object-contain md:w-[15vh]"
+            className=" object-contain w-[15vh]"
             alt="AIAA Logo"
             width={492}
             height={129}
@@ -116,14 +116,14 @@ export const TimelineSection = () => {
                   </p>
                   <div className=" flex flex-row justify-evenly">
                     <Image
-                      className=" py-[5%] md:object-contain md:w-[45%]"
+                      className=" py-[5%] object-contain w-[45%]"
                       src={LANDING_GEAR}
                       alt="Presenting at CIRCUIT fair"
                       width={960}
                       height={960}
                     />
                     <Image
-                      className=" py-[5%] md:object-contain md:w-[45%]"
+                      className=" py-[5%] object-contain w-[45%] rounded-large"
                       src={PLANE_TOP}
                       alt="Presenting at CIRCUIT fair"
                       width={960}
