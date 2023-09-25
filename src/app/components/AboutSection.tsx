@@ -8,8 +8,11 @@ import Image from "next/image";
 
 export const AboutSection = () => {
   return (
-    <div className=" flex flex-col justify-center align-middle bg-white w-full h-[95vh] p-[10%]">
-      <h2 id="about" className=" text-[5vw] text-center">
+    <div
+      id="about"
+      className=" flex flex-col justify-center align-middle bg-white w-screen h-screen p-[5%]"
+    >
+      <h2 className=" text-[5vw] text-center">
         <span className=" font-semibold bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 text-transparent bg-clip-text">
           Curiosity
         </span>{" "}
@@ -18,7 +21,7 @@ export const AboutSection = () => {
       </h2>
       <Spacer y={10} />
       <div className=" flex xl:flex-row flex-col justify-center align-middle">
-        <p className=" md:text-2xl text-sm">
+        <p className=" 2xl:text-4xl md:text-2xl text-sm">
           I am a junior studying Computer Science at the University of{" "}
           <span className=" text-maryland-red">Maryland</span>, College Park. I
           love building new projects. Starting from my freshman year I've been
