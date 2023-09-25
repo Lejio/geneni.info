@@ -34,7 +34,9 @@ export const TimelineSection = () => {
             <Card>
               <CardHeader>
                 <div className=" flex flex-row align-middle items-center">
-                  <h3 className=" md:text-2xl">CIRCUIT Research Intern</h3>
+                  <h3 className=" md:text-2xl text-xs">
+                    CIRCUIT Research Intern
+                  </h3>
                   <Spacer x={5} />
                   <Chip
                     startContent={<BsCheckCircleFill size={20} />}

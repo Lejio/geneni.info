@@ -21,7 +21,7 @@ export const AboutSection = () => {
       </h2>
       <Spacer y={10} />
       <div className=" flex xl:flex-row flex-col justify-center align-middle">
-        <p className=" md:text-2xl text-sm">
+        <p className=" 2xl:text-4xl md:text-2xl text-sm">
           I am a junior studying Computer Science at the University of{" "}
           <span className=" text-maryland-red">Maryland</span>, College Park. I
           love building new projects. Starting from my freshman year I've been
