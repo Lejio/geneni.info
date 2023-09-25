@@ -63,6 +63,7 @@ const NavbarComponent = () => {
               <Link
                 className=" text-slate-200 hover:text-light-purp duration-300 xl:text-[1vw]"
                 href={item.href}
+                as={item.href}
               >
                 {item.title}
               </Link>
@@ -104,6 +105,7 @@ const NavbarComponent = () => {
             <Link
               className="w-full my-[5%] justify-center text-white"
               href={item.href}
+              as={item.href}
               onClick={() => console.log(setIsMenuOpen(false))}
             >
               {item.title}
