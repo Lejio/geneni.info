@@ -24,8 +24,8 @@ export const AboutSection = () => {
         <p className=" 2xl:text-4xl md:text-2xl text-sm">
           I am a junior studying Computer Science at the University of{" "}
           <span className=" text-maryland-red">Maryland</span>, College Park. I
-          love building new projects. Starting from my freshman year I've been
-          going to hackathons, learning new programming paradigms and
+          love building new projects. Starting from my freshman year I&apos;ve
+          been going to hackathons, learning new programming paradigms and
           materializing my{" "}
           <span className=" bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-transparent bg-clip-text">
             imaginations
