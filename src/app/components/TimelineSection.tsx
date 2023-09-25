@@ -120,7 +120,7 @@ export const TimelineSection = () => {
                 <div className=" flex flex-col justify-center items-center align-middle">
                   <p className=" text-xs md:text-base">
                     Managed the structures team for UMBC&apos;s AIAA competition
-                    aircraft. Designed the aircraft in solidworks 3D. Personally
+                    aircraft. Designed the aircraft in Solidworks 3D. Personally
                     implemented the aircrafts design to resemble that of a
                     taildragger for better and easier delivery of cargo. Also
                     designed the landing gear of the aircraft
