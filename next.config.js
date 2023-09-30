@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  //   headers: {
+  //     "Permissions-Policy": "default",
+  //   },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
